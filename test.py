@@ -2,12 +2,13 @@
 
 import json
 import praw
-from pprint import pprint
 
 data = json.load(open("config.json"))
 
 for x in data:
     print("%s: %s" % (x, data[x]))
+
+print(data['client_secret'])
 
 # source = 'murica'
 # destination = 'muricaspeaks'
