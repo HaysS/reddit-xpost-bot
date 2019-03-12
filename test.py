@@ -10,8 +10,9 @@ for x in data:
 
 # print(data['client_secret'])
 
-source = 'expojs'
-destination = 'LearnReactNative'
+# create better system for managing these credentials
+source = 'cybersecurity'
+destination = 'infocyte'
 
 reddit = praw.Reddit(
     client_id=data['client_id'],
