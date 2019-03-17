@@ -25,11 +25,8 @@ i = 0
 
 submissions = reddit.subreddit(destination).stream.submissions()
 
-for submission in submissions:
-    print(i)
-    i =i+1
-
-# for submission in reddit.subreddit(source).top(time_filter='week'):
-#     if not submission.is_self:
+for submission in reddit.subreddit(source).top(time_filter='week'):
+	print("copy? %s" % (submissions.index(submission)))
+    # if not submission.is_self:
 #     	print("submission.title: %s" % (submission.url))
         # reddit.subreddit(destination).submit(submission.title, url=submission.url)
